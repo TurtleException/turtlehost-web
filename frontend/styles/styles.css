@@ -1,5 +1,29 @@
 @charset "UTF-8";
 
+@import "colors.css";
+
+html {
+    /* Hide scrollbar */
+    scrollbar-width: none;
+}
+
+html, body {
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* - - - BACKGROUND - - - */
+
+body {
+    background-image: url("../assets/camo.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 /* - - - HEADER - - - */
 
 body .header {
@@ -7,6 +31,8 @@ body .header {
     left: 0;
     right: 0;
     top: 0;
+
+    background-color: var(--color-pixel-secondary);
 }
 
 body .header #brand.container {
@@ -33,6 +59,9 @@ body .footer {
 
     padding: .5rem;
     font-size: .85rem;
+
+    background-color: rgb(from var(--color-pixel-secondary) r g b / 50%);
+    color: var(--color-subtitle);
 }
 
 /* - - - CONTENT - - - */
@@ -58,3 +87,21 @@ body .footer {
 .container {
     margin: 0 auto;
 }
+
+/* - - - TEXT - - - */
+
+body {
+    color: var(--color-text);
+
+    line-height: 1.5;
+
+    font-family: Raleway, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+}
+
+:first-child { margin-top:    0; }
+:last-child  { margin-bottom: 0; }

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+:root {
+    --color-pixel-brightest-gray: rgb(250, 250, 250);
+    --color-pixel-bright-gray:    rgb(204, 204, 204);
+    --color-pixel-light-gray:     rgb(166, 166, 166);
+    --color-pixel-gray:           rgb(117, 117, 117);
+    --color-pixel-dark-gray:      rgb( 56,  56,  56);
+    --color-pixel-darkest-gray:   rgb( 47,  47,  47);
+
+    --color-pixel-background: rgb(158, 119, 56);
+
+    --color-pixel-turtle-primary: rgb(117, 127, 63);
+    --color-pixel-turtle-accent:  rgb(189, 207, 70);
+
+    --color-pixel-butterfly-primary: rgb( 28,  99, 153);
+    --color-pixel-butterfly-accent:  rgb( 85, 172, 238);
+
+    --color-pixel-secondary: rgb(43, 43, 43);
+}
+
+:root {
+    --color-pixel-primary: var(--color-pixel-turtle-primary);
+    --color-pixel-accent:  var(--color-pixel-turtle-accent);
+}
+
+:root {
+    --color-background: var(--color-pixel-background);
+
+    --color-title:    var(--color-pixel-brightest-gray);
+    --color-subtitle: rgb(from var(--color-pixel-brightest-gray) r g b / 98%);
+    --color-text:     rgb(from var(--color-pixel-brightest-gray) r g b / 94%);
+
+    --color-link:       var(--color-pixel-brightest-gray);
+    --color-link-hover: var(--color-pixel-accent);
+}
