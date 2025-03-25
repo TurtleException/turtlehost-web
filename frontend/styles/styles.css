@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* - - - HEADER - - - */
+
+body .header {
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+body .header #brand.container {
+    min-height: 80px;
+    padding: 10px 0;
+}
+
+body .header .logo img {
+    max-height: 70px;
+    max-width: 70px;
+}
+
+body .header .logo {
+    float: left;
+}
+
+/* - - - FOOTER - - - */
+
+body .footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: .5rem;
+    font-size: .85rem;
+}
+
+/* - - - CONTENT - - - */
+
+@media screen and (min-width: 1216px) {
+    .content {
+        max-width: 1152px;
+    }
+}
+
+.content {
+    margin: 0 auto;
+}
+
+/* - - - CONTAINER - - - */
+
+@media screen and (min-width: 1216px) {
+    .container {
+        max-width: 1152px;
+    }
+}
+
+.container {
+    margin: 0 auto;
+}
