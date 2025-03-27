@@ -33,6 +33,7 @@ body .header {
     top: 0;
 
     background-color: var(--color-pixel-secondary);
+    box-shadow: 0 2px 15px 0 var(--color-header-shadow);
 }
 
 body .header #brand.container {
@@ -60,8 +61,9 @@ body .footer {
     padding: .5rem;
     font-size: .85rem;
 
-    background-color: rgb(from var(--color-pixel-secondary) r g b / 50%);
     color: var(--color-subtitle);
+    background-color: rgb(from var(--color-pixel-secondary) r g b / 50%);
+    box-shadow: 0 2px 15px 0 var(--color-footer-shadow);
 }
 
 /* - - - CONTENT - - - */
@@ -73,7 +75,7 @@ body .footer {
 }
 
 .content {
-    margin: 0 auto;
+    margin: 1.5rem auto 0;
 }
 
 /* - - - CONTAINER - - - */
