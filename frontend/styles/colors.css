@@ -27,6 +27,8 @@
 :root {
     --color-background: var(--color-pixel-background);
 
+    --color-card-background: var(--color-pixel-secondary);
+
     --color-title:    var(--color-pixel-brightest-gray);
     --color-subtitle: rgb(from var(--color-pixel-brightest-gray) r g b / 98%);
     --color-text:     rgb(from var(--color-pixel-brightest-gray) r g b / 94%);
