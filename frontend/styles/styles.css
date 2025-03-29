@@ -53,7 +53,7 @@ body .header .logo {
 /* - - - FOOTER - - - */
 
 body .footer {
-    position: fixed;
+    position: sticky;
     left: 0;
     right: 0;
     bottom: 0;
@@ -64,6 +64,7 @@ body .footer {
     color: var(--color-subtitle);
     background-color: rgb(from var(--color-pixel-secondary) r g b / 50%);
     box-shadow: 0 2px 15px 0 var(--color-footer-shadow);
+    text-shadow: rgba(0, 0, 0, 25%) 0 0 0.85rem;
 }
 
 /* - - - CONTENT - - - */
@@ -75,7 +76,7 @@ body .footer {
 }
 
 .content {
-    margin: 1.5rem auto 0;
+    margin: 1.5rem auto 1.5rem;
 }
 
 /* - - - CONTAINER - - - */
@@ -88,6 +89,22 @@ body .footer {
 
 .container {
     margin: 0 auto;
+}
+
+/* - - - SECTIONS - - - */
+
+.section {
+    --border-padding-margin: 0.75rem;
+    --section-opacity: 40%;
+
+    background-color: rgb(from var(--color-pixel-secondary) r g b / var(--section-opacity));
+    box-shadow: 0 2px 15px 0 rgb(from var(--color-card-shadow) r g b / var(--section-opacity));
+
+    text-shadow: rgba(0, 0, 0, var(--section-opacity) / 2) 0 0 0.75rem;
+
+    margin:        var(--border-padding-margin);
+    padding:       var(--border-padding-margin);
+    border-radius: var(--border-padding-margin);
 }
 
 /* - - - COLUMNS & CARDS - - - */
