@@ -24,32 +24,6 @@ body {
     background-attachment: fixed;
 }
 
-/* - - - HEADER - - - */
-
-body .header {
-    position: sticky;
-    left: 0;
-    right: 0;
-    top: 0;
-
-    background-color: var(--color-pixel-secondary);
-    box-shadow: 0 2px 15px 0 var(--color-header-shadow);
-}
-
-body .header #brand.container {
-    min-height: 80px;
-    padding: 10px 0;
-}
-
-body .header .logo img {
-    max-height: 70px;
-    max-width: 70px;
-}
-
-body .header .logo {
-    float: left;
-}
-
 /* - - - FOOTER - - - */
 
 body .footer {

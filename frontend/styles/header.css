@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+@import "colors.css";
+
+body .header {
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    background-color: var(--color-pixel-secondary);
+    box-shadow: 0 2px 15px 0 var(--color-header-shadow);
+}
+
+body .header #brand.container {
+    min-height: 80px;
+    padding: 10px 0;
+}
+
+body .header #brand.container .logo {
+    float: left;
+}
+
+body .header #brand.container .logo img {
+    max-height: 70px;
+    max-width: 70px;
+}
+
+/* - - - NAVBAR - - - */
+
+body .header #nav.container {
+    height: min-content;
+
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+body .header #nav.container .navbar-element {
+    width:  fit-content;
+
+    align-content: center;
+
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+
+    margin: 0 0.25rem;
+
+    transition: background-color 0.2s;
+}
+
+body .header #nav.container .navbar-element:hover {
+    background-color: var(--color-pixel-primary);
+    transition: background-color 0.1s;
+}
+
+body .header #nav.container .navbar-element:first-child {
+    margin-left: 0.75rem;
+}
+
+body .header #nav.container .navbar-element:last-child {
+    margin-right: 0.75rem;
+}
