@@ -81,12 +81,16 @@ body .footer {
     border-radius: var(--border-padding-margin);
 }
 
+.column .section {
+    margin: 0;
+    height: 100%;
+}
+
 /* - - - COLUMNS & CARDS - - - */
 
 @media screen and (min-width: 769px), print {
     .columns:not(.is-desktop) {
         display: flex;
-        align-items: center;
     }
 }
 
