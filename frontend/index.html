@@ -8,14 +8,18 @@
         <link rel="stylesheet" href="styles/colors.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/animations.css">
-        <link rel="icon" href="assets/favicon.ico">
+
+        <link id="theme-style-color"   rel="stylesheet" href="themes/turtle/colors.css">
+        <link id="theme-style-favicon" rel="icon"       href="themes/turtle/favicon.ico">
+
+        <script src="theme.js"></script>
     </head>
 
     <body>
         <div class="header">
             <div class="container" id="brand">
                 <div class="logo">
-                    <img src="assets/logo.png" alt="logo">
+                    <img id="theme-style-logo" src="themes/turtle/logo.png" alt="logo">
                 </div>
                 <div class="header-title" style="padding: 6px 0 0 0">
                     <span class="headline" style="font-size: .9rem">
@@ -28,14 +32,18 @@
             </div>
 
             <div class="container" id="nav">
-                <div class="navbar-element">
-                    <div class="navbar-text">
+                <div class="container" id="nav-left">
+                    <div class="navbar-element navbar-text">
                         Element 1
                     </div>
-                </div>
-                <div class="navbar-element">
-                    <div class="navbar-text">
+                    <div class="navbar-element navbar-text">
                         Element 2
+                    </div>
+                </div>
+
+                <div class="container" id="nav-right">
+                    <div class="navbar-element navbar-icon" id="theme-button" onclick="rotateTheme()">
+                        <div class="icon" style="mask-image: url(assets/icons/mdi/palette.svg)"></div>
                     </div>
                 </div>
             </div>

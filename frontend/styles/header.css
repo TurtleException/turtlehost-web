@@ -31,12 +31,24 @@ body .header #brand.container .logo img {
 body .header #nav.container {
     height: min-content;
 
-    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+body .header #nav.container .container {
+    margin: unset;
+}
+
+body .header #nav.container #nav-left.container {
     display: flex;
 }
 
-body .header #nav.container .navbar-element {
-    width:  fit-content;
+body .header #nav.container #nav-right.container {
+    display: flex;
+}
+
+body .header #nav.container .container .navbar-element {
+    width: fit-content;
 
     align-content: center;
 
@@ -48,15 +60,38 @@ body .header #nav.container .navbar-element {
     transition: background-color 0.2s;
 }
 
-body .header #nav.container .navbar-element:hover {
+body .header #nav.container .container .navbar-element.navbar-icon {
+    padding: 0;
+
+    height: 48px;
+    width: 48px;
+}
+
+body .header #nav.container .container .navbar-element.navbar-icon .icon {
+    height: 48px;
+    width: 48px;
+
+    scale: 0.65;
+}
+
+body .header #nav.container .container .navbar-element:hover {
+    cursor: pointer;
+}
+
+body .header #nav.container .container .navbar-element.navbar-icon .icon:hover {
     background-color: var(--color-pixel-primary);
     transition: background-color 0.1s;
 }
 
-body .header #nav.container .navbar-element:first-child {
+body .header #nav.container .container .navbar-element:hover:not(:has(.icon)) {
+    background-color: var(--color-pixel-primary);
+    transition: background-color 0.1s;
+}
+
+body .header #nav.container #nav-left.container .navbar-element:first-child {
     margin-left: 0.75rem;
 }
 
-body .header #nav.container .navbar-element:last-child {
+body .header #nav.container #nav-right.container .navbar-element:last-child {
     margin-right: 0.75rem;
 }

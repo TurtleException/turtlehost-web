@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+:root {
+    --color-pixel-primary: rgb(117, 127, 63);
+    --color-pixel-accent:  rgb(189, 207, 70);
+}
