@@ -1,4 +1,7 @@
-let theme = "turtle"
+let theme = localStorage.getItem("theme")
+if (theme == null || theme === "null")
+    theme = "turtle"
+setTheme(theme)
 
 function rotateTheme() {
     switch (theme) {
@@ -6,7 +9,11 @@ function rotateTheme() {
         case "butterfly": theme = "turtle";    break;
     }
 
-    const path = "themes/" + theme + "/";
+    setTheme(theme)
+}
+
+function setTheme(theme) {
+    const path = "themes/" + theme + "/"
 
     document.getElementById("theme-style-color")
         .setAttribute("href", path + "colors.css")
@@ -16,4 +23,6 @@ function rotateTheme() {
 
     document.getElementById("theme-style-logo")
         .setAttribute("src", path + "logo.png")
+
+    localStorage.setItem("theme", theme)
 }
