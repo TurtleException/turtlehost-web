@@ -4,9 +4,9 @@
 
 body .header {
     position: sticky;
-    left: 0;
-    right: 0;
     top: 0;
+
+    transition: top 0.5s;
 
     background-color: var(--color-pixel-secondary);
     box-shadow: 0 2px 15px 0 var(--color-header-shadow);
@@ -29,8 +29,6 @@ body .header #brand.container .logo img {
 /* - - - NAVBAR - - - */
 
 body .header #nav.container {
-    height: min-content;
-
     display: flex;
     justify-content: space-between;
 }
